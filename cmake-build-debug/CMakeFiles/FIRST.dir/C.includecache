@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/colors.c
+windows.h
+-
+
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/dates.c
+
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/main.c
+stdio.h
+-
+string.h
+-
+colors.c
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/colors.c
+dates.c
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/dates.c
+
