@@ -1,5 +1,5 @@
 #include <time.h>
-#include "colors.c"
+#include "printer.c"
 
 char *days[7] = {"SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"};
 char *months[12] = {"January", "February",

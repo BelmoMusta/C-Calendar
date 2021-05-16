@@ -11,13 +11,14 @@ void flineBreak(FILE *fp);
 
 void fprintDaysOfMonthByYear(FILE *fp, int month, int year);
 
+const char *createFileName(char *c, int j);
+
 void fprintCalendar(int month, int year) {
     FILE *fp;
     char *monthName = months[month - 1];
-
-    fp = fopen("test.txt", "w+");
+    const char *fileName = createFileName(monthName, year);
+    fp = fopen(fileName, "w+");
     fprintf(fp, "%*s%s-%d\n", 20, "", monthName, year);
-    flineBreak(fp);
     fprintLineSeparator(fp);
     fprintDaysNames(fp);
     flineBreak(fp);
@@ -54,8 +55,8 @@ void fprintLineSeparator(FILE *fp) {
 
 void fprintDaysOfMonthByYear(FILE *fp, int month, int year) {
     int firstDayOfMonth = getFirstDayOfMonth(month - 1, year);
-    int i;
     int daysCount = 1;
+    int i;
     for (i = 0; i < 7; ++i) {
 
         if (i < firstDayOfMonth) {
@@ -69,10 +70,15 @@ void fprintDaysOfMonthByYear(FILE *fp, int month, int year) {
     int lastDayOfMonth = getLastDayOfMonth(month);
     for (i = daysCount; i <= lastDayOfMonth; ++i) {
         c++;
-
         fprintf(fp, "%-8d", daysCount++);
         if (c % 7 == 0) {
             flineBreak(fp);
         }
     }
+}
+
+const char *createFileName(char *c, int j) {
+    char *str = malloc(40);
+    sprintf(str, "%s-%d.txt", c, j);
+    return str;
 }

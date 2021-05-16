@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/colors.c
-windows.h
--
-
 E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/dates.c
 time.h
 -
-colors.c
-E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/colors.c
+printer.c
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/printer.c
 
 E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/files.c
 stdio.h
@@ -27,4 +23,10 @@ stdio.h
 -
 files.c
 E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/files.c
+
+E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/printer.c
+windows.h
+-
+stdio.h
+-
 

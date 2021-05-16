@@ -1,5 +1,5 @@
-
 #include <windows.h>
+#include <stdio.h>
 
 void green() {
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN);
@@ -17,30 +17,9 @@ void resetColors() {
 void lineBreak() { putchar('\n'); }
 
 void printSeparator(char c, int count) {
-
     int i;
     for (i = 0; i < count; i++) {
         putchar(c);
     }
     lineBreak();
 }
-
-void concat(){
-    const char* str1 = "hello there";
-    int n1 = 1234;
-
-    char *num;
-    char buffer[41];
-
-    if (asprintf(&num, "%d", n1) == -1) {
-        perror("asprintf");
-    } else {
-        strcat(strcpy(buffer, str1), num);
-        printf("%s\n", buffer);
-        free(num);
-    }
-}
-
-
-
-
