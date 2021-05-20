@@ -3,6 +3,6 @@ project(LOL C)
 
 set(CMAKE_C_STANDARD 90)
 
-add_executable(LOL main.c jjjj.cpp jjjj.h jjjj.ui)
+add_executable(LOL main.c)
 
 
