@@ -74,6 +74,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/jjjj.cpp">
+			<Option target="LOL"/>
+		</Unit>
+		<Unit filename="E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/jjjj.h">
+			<Option target="LOL"/>
+		</Unit>
+		<Unit filename="E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/jjjj.ui">
+			<Option target="LOL"/>
+		</Unit>
 		<Unit filename="E:/C..CplusPlus/CLion-2021.1.1.win/PROJECTS/FIRST/main.c">
 			<Option target="LOL"/>
 		</Unit>
